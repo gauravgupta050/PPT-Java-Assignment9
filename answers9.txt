@@ -1,0 +1,78 @@
+Que1.What is Spring Framework?
+
+Ans:-The Spring Framework provides a comprehensive programming and configuration model for modern Java-based enterprise applications - on any kind of deployment platform. A key element of Spring is infrastructural support at the application level: Spring focuses on the "plumbing" of enterprise applications so that teams can focus on application-level business logic, without unnecessary ties to specific deployment environments.
+
+Que2.What are the features of Spring Framework?
+
+Ans:-Core technologies: dependency injection, events, resources, i18n, validation, data binding, type conversion, SpEL, AOP.
+
+Testing: mock objects, TestContext framework, Spring MVC Test, WebTestClient.
+
+Data Access: transactions, DAO support, JDBC, ORM, Marshalling XML.
+
+Spring MVC and Spring WebFlux web frameworks.
+
+Integration: remoting, JMS, JCA, JMX, email, tasks, scheduling, cache and observability.
+
+Languages: Kotlin, Groovy, dynamic languages.
+
+Que3.What is a Spring configuration file?
+
+Ans:-Spring configuration file is a file with . xml extension and the file contains information about the classes and interfaces and their dependencies. Using this file the spring container controls the life cycle of a spring bean and also Dependency Injection is achieved.
+
+Que4.What do you mean by IoC Container?
+
+Ans:-IoC container is a framework for implementing automated dependency injection. It contains object creation for the longer ways to use and injects dependencies within the class.
+
+Que5.What do you understand by Dependency Injection?
+
+Ans:-In software engineering, dependency injection is a programming technique in which an object or function receives other objects or functions that it depends on. Dependency injection aims to separate the concerns of constructing objects and using them, leading to loosely coupled programs.
+
+Que6.Explain the difference between constructor and setter injection?
+
+Ans:-Constructor-based DI fixes the order in which the dependencies need to be injected. Setter-based DI helps us to inject the dependency only when it is required, as opposed to requiring it at construction time. Spring code generation library doesn't support constructor injection so it will not be able to create proxy
+
+Que7.What are Spring Beans?
+
+Ans:- A Spring bean is an object that form the backbone of your application and that is managed by the Spring IoC container. A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container.
+
+Que8.What are the bean scopes available in Spring?
+
+Ans:-The latest version of the Spring framework defines 6 types of scopes:
+
+1.singleton
+2.prototype
+3.request
+4.session
+5.application
+6.websocket
+
+Que9.What is Autowiring and name the different modes of it?
+
+Ans:-To reduce this kind of adding extra code for each dependency ,Go for Spring’s feature “Autowiring”. Thanks a ton for Autowiring feature.
+
+Autowiring is of 4 types
+
+1) byName
+
+2) byType
+
+3) constructor
+
+4) autodetect
+
+1) byName
+The name of the attribute in the Person class should be same as the bean id/name inside the spring configuration file.
+
+2)byType
+The data type of the attribute should be same as the data type of the bean defined in the spring configuration file.
+
+3)constructor
+In this method , spring searches for the type of constructor argument inside spring config file
+
+4)autodetect or default
+If we choose Autowiring type is autodetect/default then Autowire by constructor first , if not then autowire by Type.
+
+Que10.Explain Bean life cycle in Spring Bean Factory Container.
+
+Ans:-Bean life cycle is managed by the spring container. When run the program then, first of all, the spring container gets started. After that, the container creates the instance of a bean as per the request, and then dependencies are injected. And finally, the bean is destroyed when the spring container is closed.
